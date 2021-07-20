@@ -1,0 +1,12 @@
+1.引入相应的库#include <ESP8266WebServer.h>;
+
+2.建立全局的Web服务器并监听某端口ESP8266WebServer server(port)；(port一般可写80);
+
+3.在setup()中绑定http请求的回调函数server.on(url, function);
+
+4.在setup()中绑定http请求不可用时的回调函数server.onNotFound(function);(可选);
+
+5.在setup()中开启WebServer功能server.begin();
+
+6.在loop()中监听客户请求并处理server.handleClient();
+
