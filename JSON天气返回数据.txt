@@ -1,0 +1,66 @@
+String serverJson=client.readString();
+Serial.print(serverJson);
+即可获取返回Json信息
+{"results":[{"location":{"id":"WW56FQXV5ZHB","name":"Xuzhou","country":"CN","path":"Xuzhou,Xuzhou,Jiangsu,China","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"now":{"text":"Overcast","code":"9","temperature":"27"},"last_update":"2021-07-21T08:35:00+08:00"}]}
+
+
+
+08:55:28.487 -> ....
+08:55:32.262 -> WiFi Connected!
+08:55:32.262 -> Connecting to api.seniverse.com Success!
+08:55:32.310 -> Sending request: 
+08:55:32.310 -> GET /v3/weather/now.json?key=SCXC4Mj_0aB96cZup&location=xuzhou&language=en&unit=c HTTP/1.1
+08:55:32.452 -> Host: api.seniverse.com
+08:55:32.452 -> Connection: close
+08:55:32.452 -> 
+08:55:32.452 -> 
+08:55:32.452 -> Web Server Response:
+08:55:32.499 -> HTTP/1.1 200 OK
+
+08:55:32.546 -> Date: Wed, 21 Jul 2021 00:55:31 GMT
+
+08:55:32.546 -> Content-Type: application/json; charset=utf-8
+
+08:55:32.591 -> Content-Length: 268
+
+08:55:32.638 -> Connection: close
+
+08:55:32.685 -> X-Instance-Id: 0e9c72c8-83b3-4cec-a8db-00821d4784ff
+
+08:55:32.685 -> X-RateLimit-Limit-hour: 400
+
+08:55:32.732 -> X-RateLimit-Remaining-hour: 398
+
+08:55:32.779 -> X-Powered-By: Express
+
+08:55:32.779 -> ETag: W/"10c-6IU84FjBjWyCHCYV6EX7Vn9S6RU"
+
+08:55:32.824 -> X-Kong-Upstream-Latency: 3
+
+08:55:32.870 -> X-Kong-Proxy-Latency: 25
+
+08:55:32.916 -> Via: kong/0.14.1
+
+08:55:32.916 -> 
+
+08:55:37.793 -> {"results":[{"location":{"id":"WW56FQXV5ZHB","name":"Xuzhou","country":"CN","path":"Xuzhou,Xuzhou,Jiangsu,China","timezone":"Asia/Shanghai","timezone_offset":"+08:00"},"now":{"text":"Overcast","code":"9","temperature":"27"},"last_update":"2021-07-21T08:35:00+08:00"}]}
+08:55:38.071 -> Disconnected from api.seniverse.com
+
+
+
+
+
+
+
+
+
+{"results":[{"location":{"id":"WW56FQXV5ZHB",
+                         "name":"Xuzhou",
+                         "country":"CN",
+                         "path":"Xuzhou,Xuzhou,Jiangsu,China",
+                         "timezone":"Asia/Shanghai",
+                         "timezone_offset":"+08:00"},
+"now":{"text":"Overcast","code":"9","temperature":"27"},
+       "last_update":"2021-07-21T08:35:00+08:00"}]}
+
+
